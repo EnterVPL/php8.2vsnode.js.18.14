@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  php:
+    container_name: php
+    build: php
+    volumes:
+      - ./php/code:/home/php/code
+  node:
+    container_name: node
+    build: node
+    volumes:
+      - ./node/code:/home/node/code
